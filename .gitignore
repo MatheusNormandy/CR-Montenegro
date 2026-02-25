@@ -1,0 +1,26 @@
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Dependencies
+node_modules/
+
+# Build
+dist/
+.cache/
+
+# Development files
+lumina-digital.aura.build/
+template/
+media/
+
+# Env
+.env
+.env.local

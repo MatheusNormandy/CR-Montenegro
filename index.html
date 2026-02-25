@@ -6,7 +6,60 @@
 <title>CRMONTENEGRO — Odontologia de Excelência</title>
 <meta name="description" content="Dr. Carlos Renato Montenegro — Especialista em Ortodontia, DTM, Dor Orofacial e Odontologia do Sono. Um dos 30 brasileiros premiados com o Lifetime History Award."/>
 <meta name="robots" content="index, follow"/>
-<link rel="icon" href="media/logo.png" type="image/png"/>
+<link rel="canonical" href="https://www.crmontenegro.com.br/"/>
+<link rel="icon" href="assets/img/favicon.png" type="image/png"/>
+
+<!-- Open Graph -->
+<meta property="og:title" content="CRMONTENEGRO — Odontologia de Excelência"/>
+<meta property="og:description" content="Dr. Carlos Renato Montenegro — Especialista em Ortodontia, DTM, Dor Orofacial e Odontologia do Sono. Um dos 30 brasileiros premiados com o Lifetime History Award."/>
+<meta property="og:image" content="https://www.crmontenegro.com.br/assets/img/hero-trabalhando.png"/>
+<meta property="og:url" content="https://www.crmontenegro.com.br/"/>
+<meta property="og:type" content="website"/>
+<meta property="og:locale" content="pt_BR"/>
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="CRMONTENEGRO — Odontologia de Excelência"/>
+<meta name="twitter:description" content="Dr. Carlos Renato Montenegro — Especialista em Ortodontia, DTM e Odontologia do Sono. Lifetime History Award."/>
+<meta name="twitter:image" content="https://www.crmontenegro.com.br/assets/img/hero-trabalhando.png"/>
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "CR Montenegro Odontologia",
+  "url": "https://www.crmontenegro.com.br",
+  "logo": "https://www.crmontenegro.com.br/assets/img/logo.png",
+  "image": "https://www.crmontenegro.com.br/assets/img/hero-trabalhando.png",
+  "description": "Clínica odontológica de excelência liderada pelo Dr. Carlos Renato Montenegro, especialista em Ortodontia, DTM, Dor Orofacial e Odontologia do Sono.",
+  "telephone": "+55-81-98849-7447",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Emp. RioMar Trade Center, Torre 2, Sala 1602",
+    "addressLocality": "Recife",
+    "addressRegion": "PE",
+    "postalCode": "51110-160",
+    "addressCountry": "BR"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+55-81-98849-7447",
+    "contactType": "customer service",
+    "availableLanguage": "Portuguese"
+  },
+  "sameAs": [
+    "https://www.instagram.com/crmodontologia/"
+  ],
+  "priceRange": "$$$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "opens": "08:00",
+    "closes": "18:00"
+  }
+}
+</script>
 
 <script src="https://cdn.tailwindcss.com"></script>
 <script>
@@ -42,14 +95,10 @@ tailwind.config = {
 }
 </script>
 
-<!-- Iconify (same as DS) -->
-<script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js"></script>
+<script src="https://code.iconify.design/iconify-icon/2.3.0/iconify-icon.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 
-<!-- GSAP + ScrollTrigger (same as DS) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
-<!-- Fonts (DS fonts: Inter, DM Sans, Bricolage Grotesque) -->
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Bricolage+Grotesque:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
@@ -139,6 +188,18 @@ tailwind.config = {
     animation: shimmer 4s linear infinite;
   }
 </style>
+
+<!--
+  HEADERS DE SEGURANÇA — configurar no servidor/hosting antes do deploy
+
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://code.iconify.design https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://api.iconify.design;
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+-->
+
 </head>
 
 <body class="bg-surface-50 text-brand-900 antialiased overflow-x-hidden">
@@ -156,7 +217,7 @@ tailwind.config = {
   <div class="flex items-center gap-3 relative z-10 max-w-7xl mx-auto w-full">
     <!-- Logo -->
     <a href="#hero" class="flex items-center gap-3">
-      <img src="media/Logo sem fundo.png" alt="CRMONTENEGRO" class="h-9 w-auto"/>
+      <img src="assets/img/logo.png" alt="CRMONTENEGRO" class="h-9 w-auto"/>
       <span class="text-xl tracking-tighter font-semibold font-display uppercase">CRMONTENEGRO</span>
     </a>
     <!-- Nav Links (DS: text-sm font-medium uppercase tracking-tight) -->
@@ -167,12 +228,12 @@ tailwind.config = {
       <a class="text-sm font-medium text-accent hover:text-brand-900 transition-colors uppercase tracking-tight" href="#contact">Contato</a>
     </div>
     <!-- CTA Button (DS: bg-zinc-900 text-white px-5 py-2.5 rounded-full) -->
-    <a href="https://wa.me/5581988497447" target="_blank" class="hidden md:flex ml-8 bg-brand-900 text-surface-50 px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-800 transition-all items-center gap-2 group">
+    <a href="https://wa.me/5581988497447" target="_blank" rel="noopener noreferrer" class="hidden md:flex ml-8 bg-brand-900 text-surface-50 px-5 py-2.5 rounded-full text-sm font-medium hover:bg-brand-800 transition-all items-center gap-2 group">
       Agende sua Consulta
       <iconify-icon class="group-hover:translate-x-0.5 transition-transform" icon="solar:arrow-right-linear" width="18"></iconify-icon>
     </a>
     <!-- Mobile Menu (DS: md:hidden) -->
-    <button class="md:hidden ml-auto" id="mobile-menu-btn">
+    <button class="md:hidden ml-auto" id="mobile-menu-btn" aria-label="Abrir menu de navegação">
       <iconify-icon icon="solar:hamburger-menu-linear" width="24"></iconify-icon>
     </button>
   </div>
@@ -180,15 +241,15 @@ tailwind.config = {
 
 <!-- ========== MOBILE MENU ========== -->
 <div id="mobile-menu" class="fixed inset-0 z-[60] bg-surface-50 flex-col items-center justify-center gap-8 hidden">
-  <button class="absolute top-6 right-6" id="mobile-menu-close">
+  <button class="absolute top-6 right-6" id="mobile-menu-close" aria-label="Fechar menu de navegação">
     <iconify-icon icon="solar:close-circle-linear" width="28" class="text-brand-900"></iconify-icon>
   </button>
-  <img src="media/Logo sem fundo.png" alt="CRMONTENEGRO" class="h-14 w-auto mb-4"/>
+  <img src="assets/img/logo.png" alt="CRMONTENEGRO" class="h-14 w-auto mb-4"/>
   <a class="text-2xl font-display font-medium text-brand-900 tracking-tight" href="#hero" onclick="closeMobileMenu()">Início</a>
   <a class="text-2xl font-display font-medium text-brand-900 tracking-tight" href="#trajetoria" onclick="closeMobileMenu()">Trajetória</a>
   <a class="text-2xl font-display font-medium text-brand-900 tracking-tight" href="#tratamentos" onclick="closeMobileMenu()">Tratamentos</a>
   <a class="text-2xl font-display font-medium text-brand-900 tracking-tight" href="#contact" onclick="closeMobileMenu()">Contato</a>
-  <a href="https://wa.me/5581988497447" target="_blank" class="mt-4 bg-brand-900 text-surface-50 px-8 py-4 rounded-full text-lg font-medium hover:bg-brand-800 transition-all flex items-center gap-3">
+  <a href="https://wa.me/5581988497447" target="_blank" rel="noopener noreferrer" class="mt-4 bg-brand-900 text-surface-50 px-8 py-4 rounded-full text-lg font-medium hover:bg-brand-800 transition-all flex items-center gap-3">
     Agende sua Consulta
     <iconify-icon icon="solar:arrow-right-linear" width="20"></iconify-icon>
   </a>
@@ -220,7 +281,7 @@ tailwind.config = {
       </p>
       <div class="flex gap-4 reveal-para opacity-0">
         <!-- DS: circle button w-14 h-14 -->
-        <a href="#tratamentos" class="w-14 h-14 rounded-full border border-surface-200 flex items-center justify-center hover:bg-surface-100 transition-colors group">
+        <a href="#tratamentos" aria-label="Ver tratamentos" class="w-14 h-14 rounded-full border border-surface-200 flex items-center justify-center hover:bg-surface-100 transition-colors group">
           <iconify-icon class="text-accent group-hover:text-brand-900 transition-colors" icon="solar:arrow-right-down-bold-duotone" width="24"></iconify-icon>
         </a>
       </div>
@@ -271,7 +332,8 @@ tailwind.config = {
         <img
           alt="Dr. Carlos Renato Montenegro — Atendimento Clínico"
           class="hero-card-img absolute w-full object-cover object-[center_25%] grayscale-[60%] transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105"
-          src="media/Trabalhando montenegro.png"
+          src="assets/img/hero-trabalhando.png"
+          fetchpriority="high"
           style="will-change: transform; top: -15%; left: 0; height: 130%; min-height: 130%;"
         />
       </div>
@@ -353,7 +415,7 @@ tailwind.config = {
       <div class="md:w-[46%] md:pr-12 pl-12 md:pl-0 group">
         <!-- Image card -->
         <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-surface-100 cursor-pointer">
-          <img alt="Dr. Montenegro — Formação Acadêmica" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" style="object-position: center 35%;" src="media/Montenegro 3.png"/>
+          <img alt="Dr. Montenegro — Formação Acadêmica" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" style="object-position: center 35%;" src="assets/img/timeline-formacao.png" loading="lazy"/>
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
         </div>
         <!-- Text -->
@@ -385,7 +447,7 @@ tailwind.config = {
       <div class="md:w-[46%] md:pl-12 md:ml-auto pl-12 md:pl-12 group">
         <!-- Image card -->
         <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-surface-100 cursor-pointer">
-          <img alt="Dr. Montenegro — Pioneiro no Invisalign" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" style="object-position: center 30%;" src="media/Montenegro 5.png"/>
+          <img alt="Dr. Montenegro — Pioneiro no Invisalign" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" style="object-position: center 30%;" src="assets/img/timeline-invisalign.png" loading="lazy"/>
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
         </div>
         <!-- Text -->
@@ -411,7 +473,7 @@ tailwind.config = {
       <div class="md:w-[46%] md:pr-12 pl-12 md:pl-0 group">
         <!-- Image card -->
         <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-surface-100 cursor-pointer">
-          <img alt="Dr. Montenegro — Lifetime History Award" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" src="media/Premiação Montenegro.png"/>
+          <img alt="Dr. Montenegro — Lifetime History Award" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" src="assets/img/timeline-premiacao.png" loading="lazy"/>
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
         </div>
         <!-- Text -->
@@ -443,7 +505,7 @@ tailwind.config = {
       <div class="md:w-[46%] md:pl-12 md:ml-auto pl-12 md:pl-12 group">
         <!-- Image card -->
         <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-surface-100 cursor-pointer">
-          <img alt="Dr. Montenegro — CRMONTENEGRO Hoje" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" style="object-position: center 25%;" src="media/Montenegro 2.jpg"/>
+          <img alt="Dr. Montenegro — CRMONTENEGRO Hoje" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" style="object-position: center 25%;" src="assets/img/timeline-hoje.jpg" loading="lazy"/>
           <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
         </div>
         <!-- Text -->
@@ -538,7 +600,7 @@ tailwind.config = {
           <p class="text-white/40 leading-relaxed text-sm mb-8">
             Se você busca excelência clínica, atendimento responsável e resultados reais, este é o lugar certo. Protocolos internacionais com planejamento digital 3D.
           </p>
-          <a href="https://wa.me/5581988497447" target="_blank" class="inline-flex items-center gap-2 bg-white text-brand-900 px-6 py-3 rounded-full text-sm font-medium hover:bg-white/90 hover:scale-105 transition-all group">
+          <a href="https://wa.me/5581988497447" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 bg-white text-brand-900 px-6 py-3 rounded-full text-sm font-medium hover:bg-white/90 hover:scale-105 transition-all group">
             Agende sua Consulta
             <iconify-icon class="group-hover:translate-x-0.5 transition-transform" icon="solar:arrow-right-linear" width="16"></iconify-icon>
           </a>
@@ -673,7 +735,7 @@ tailwind.config = {
       <!-- COL 1: Brand + Tagline -->
       <div class="lg:col-span-1 ft-reveal">
         <a href="#hero" class="flex items-center gap-3 mb-5">
-          <img src="media/Logo sem fundo.png" alt="CRMONTENEGRO" class="h-12 w-auto brightness-0 invert opacity-80 hover:opacity-100 transition-opacity"/>
+          <img src="assets/img/logo.png" alt="CRMONTENEGRO" class="h-12 w-auto brightness-0 invert opacity-80 hover:opacity-100 transition-opacity" loading="lazy"/>
         </a>
         <p class="text-white/40 text-sm leading-relaxed max-w-xs font-accent">
           Cuidar de sorrisos é só o começo. Aqui, o compromisso é com saúde de verdade — excelência clínica, atendimento responsável e resultados reais.
@@ -708,17 +770,17 @@ tailwind.config = {
         <h4 class="text-sm font-semibold text-white uppercase tracking-wide mb-5">Contato</h4>
         <div class="flex flex-col gap-4">
           <!-- WhatsApp -->
-          <a href="https://wa.me/5581988497447" target="_blank" class="flex items-start gap-3 group">
+          <a href="https://wa.me/5581988497447" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 group">
             <iconify-icon class="text-white/30 group-hover:text-green-400 transition-colors mt-0.5" icon="mdi:whatsapp" width="18"></iconify-icon>
             <span class="text-sm text-white/40 group-hover:text-white transition-colors duration-300">(81) 98849-7447</span>
           </a>
           <!-- Instagram -->
-          <a href="https://www.instagram.com/crmodontologia/" target="_blank" class="flex items-start gap-3 group">
+          <a href="https://www.instagram.com/crmodontologia/" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 group">
             <iconify-icon class="text-white/30 group-hover:text-pink-400 transition-colors mt-0.5" icon="mdi:instagram" width="18"></iconify-icon>
             <span class="text-sm text-white/40 group-hover:text-white transition-colors duration-300">@crmodontologia</span>
           </a>
           <!-- Endereço -->
-          <a href="https://maps.google.com/?q=RioMar+Trade+Center+Torre+2+Sala+1602+Pina+Recife" target="_blank" class="flex items-start gap-3 group">
+          <a href="https://maps.google.com/?q=RioMar+Trade+Center+Torre+2+Sala+1602+Pina+Recife" target="_blank" rel="noopener noreferrer" class="flex items-start gap-3 group">
             <iconify-icon class="text-white/30 group-hover:text-white transition-colors mt-0.5 shrink-0" icon="solar:map-point-bold-duotone" width="18"></iconify-icon>
             <span class="text-sm text-white/40 group-hover:text-white transition-colors duration-300 leading-relaxed">RioMar Trade Center, Torre 2, Sala 1602 — Pina, Recife/PE</span>
           </a>
@@ -732,7 +794,7 @@ tailwind.config = {
   <div class="border-t border-white/10">
     <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
       <p class="text-xs text-white/25 text-center md:text-left">© 2026 CR Montenegro Odontologia. Todos os direitos reservados.</p>
-      <p class="text-xs text-white/25 text-center md:text-right">Desenvolvido por <a href="https://www.instagram.com/matheus_normandy/" target="_blank" class="text-white/40 hover:text-white transition-colors">Matheus Normandy</a></p>
+      <p class="text-xs text-white/25 text-center md:text-right">Desenvolvido por <a href="https://www.instagram.com/matheus_normandy/" target="_blank" rel="noopener noreferrer" class="text-white/40 hover:text-white transition-colors">Matheus Normandy</a></p>
     </div>
   </div>
 
