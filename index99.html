@@ -161,6 +161,7 @@ tailwind.config = {
     <!-- Nav Links (DS: text-sm font-medium uppercase tracking-tight) -->
     <div class="ml-auto hidden md:flex items-center gap-8">
       <a class="text-sm font-medium text-accent hover:text-brand-900 transition-colors uppercase tracking-tight" href="#hero">Início</a>
+      <a class="text-sm font-medium text-accent hover:text-brand-900 transition-colors uppercase tracking-tight" href="#trajetoria">Trajetória</a>
       <a class="text-sm font-medium text-accent hover:text-brand-900 transition-colors uppercase tracking-tight" href="#services">Tratamentos</a>
       <a class="text-sm font-medium text-accent hover:text-brand-900 transition-colors uppercase tracking-tight" href="#about">Sobre</a>
       <a class="text-sm font-medium text-accent hover:text-brand-900 transition-colors uppercase tracking-tight" href="#contact">Contato</a>
@@ -184,6 +185,7 @@ tailwind.config = {
   </button>
   <img src="media/Logo sem fundo.png" alt="CRMONTENEGRO" class="h-14 w-auto mb-4"/>
   <a class="text-2xl font-display font-medium text-brand-900 tracking-tight" href="#hero" onclick="closeMobileMenu()">Início</a>
+  <a class="text-2xl font-display font-medium text-brand-900 tracking-tight" href="#trajetoria" onclick="closeMobileMenu()">Trajetória</a>
   <a class="text-2xl font-display font-medium text-brand-900 tracking-tight" href="#services" onclick="closeMobileMenu()">Tratamentos</a>
   <a class="text-2xl font-display font-medium text-brand-900 tracking-tight" href="#about" onclick="closeMobileMenu()">Sobre</a>
   <a class="text-2xl font-display font-medium text-brand-900 tracking-tight" href="#contact" onclick="closeMobileMenu()">Contato</a>
@@ -312,6 +314,168 @@ tailwind.config = {
 
 </main>
 
+<!-- ================================================================ -->
+<!-- SECTION: TRAJETÓRIA — Timeline com Cards Alternados              -->
+<!-- ================================================================ -->
+<section class="max-w-7xl mx-auto px-6 py-24 relative" id="trajetoria">
+
+  <!-- Section Label (DS pattern: icon + 01 — Label) -->
+  <div class="inline-flex items-center gap-2 mb-6 tl-reveal">
+    <iconify-icon class="text-accent" icon="solar:star-rings-bold-duotone" width="24"></iconify-icon>
+    <span class="text-sm font-semibold tracking-wide uppercase text-accent">01 — Trajetória</span>
+  </div>
+
+  <!-- Section H2 (DS pattern: text-4xl md:text-5xl tracking-tighter) -->
+  <div class="mb-16">
+    <h2 class="text-4xl md:text-5xl tracking-tighter leading-tight font-display font-light text-brand-900">
+      <div class="line-mask"><span class="tl-reveal-text">Uma História de</span></div>
+      <div class="line-mask"><span class="tl-reveal-text italic text-accent font-accent">Excelência.</span></div>
+    </h2>
+    <p class="text-accent leading-relaxed text-base md:text-lg max-w-2xl mt-6 tl-reveal font-accent">
+      Mais de duas décadas dedicadas à odontologia de alta performance. Conheça os marcos que definiram a trajetória do Dr. Carlos Renato Montenegro como referência internacional.
+    </p>
+  </div>
+
+  <!-- ── TIMELINE ── -->
+  <div class="relative">
+
+    <!-- Vertical Line (center) — visible on md+ -->
+    <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-surface-200 -translate-x-1/2"></div>
+    <!-- Vertical Line (left) — visible on mobile -->
+    <div class="md:hidden absolute left-6 top-0 bottom-0 w-px bg-surface-200"></div>
+
+    <!-- ── TIMELINE ITEM 1: LEFT CARD ── -->
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-20 md:mb-28 tl-item">
+      <!-- Timeline Dot -->
+      <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-900 border-4 border-surface-50 z-10 shadow-md"></div>
+      <div class="md:hidden absolute left-6 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-900 border-4 border-surface-50 z-10 shadow-md"></div>
+
+      <!-- LEFT: Card (md:w-[46%] md:pr-12) -->
+      <div class="md:w-[46%] md:pr-12 pl-12 md:pl-0 group">
+        <!-- Image card -->
+        <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-surface-100 cursor-pointer">
+          <img alt="Dr. Montenegro — Formação Acadêmica" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" style="object-position: center 35%;" src="media/Montenegro 3.png"/>
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+        </div>
+        <!-- Text -->
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="text-sm font-mono text-accent-lighter">2000</span>
+            <h4 class="text-2xl tracking-tight mb-2 font-display font-medium mt-1">Formação Acadêmica</h4>
+            <p class="text-accent leading-relaxed text-sm max-w-sm">
+              Graduação em Odontologia com distinção, já demonstrando paixão pela ortodontia e estética dental. O início de uma carreira que mudaria o cenário da odontologia no Brasil.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: empty space on desktop -->
+      <div class="hidden md:block md:w-[46%] md:ml-auto"></div>
+    </div>
+
+    <!-- ── TIMELINE ITEM 2: RIGHT CARD ── -->
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-20 md:mb-28 tl-item">
+      <!-- Timeline Dot -->
+      <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-900 border-4 border-surface-50 z-10 shadow-md"></div>
+      <div class="md:hidden absolute left-6 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-900 border-4 border-surface-50 z-10 shadow-md"></div>
+
+      <!-- LEFT: empty space on desktop -->
+      <div class="hidden md:block md:w-[46%]"></div>
+
+      <!-- RIGHT: Card (md:w-[46%] md:pl-12) -->
+      <div class="md:w-[46%] md:pl-12 md:ml-auto pl-12 md:pl-12 group">
+        <!-- Image card -->
+        <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-surface-100 cursor-pointer">
+          <img alt="Dr. Montenegro — Pioneiro no Invisalign" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" style="object-position: center 30%;" src="media/Montenegro 5.png"/>
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+        </div>
+        <!-- Text -->
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="text-sm font-mono text-accent-lighter">2008</span>
+            <h4 class="text-2xl tracking-tight mb-2 font-display font-medium mt-1">Pioneiro no Invisalign</h4>
+            <p class="text-accent leading-relaxed text-sm max-w-sm">
+              Um dos primeiros profissionais certificados no sistema Invisalign no Brasil. Trouxe a tecnologia de alinhadores invisíveis para o Nordeste, revolucionando a ortodontia na região.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── TIMELINE ITEM 3: LEFT CARD ── -->
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-20 md:mb-28 tl-item">
+      <!-- Timeline Dot -->
+      <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-900 border-4 border-surface-50 z-10 shadow-md"></div>
+      <div class="md:hidden absolute left-6 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-900 border-4 border-surface-50 z-10 shadow-md"></div>
+
+      <!-- LEFT: Card -->
+      <div class="md:w-[46%] md:pr-12 pl-12 md:pl-0 group">
+        <!-- Image card -->
+        <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-surface-100 cursor-pointer">
+          <img alt="Dr. Montenegro — Lifetime History Award" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" src="media/Premiação Montenegro.png"/>
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+        </div>
+        <!-- Text -->
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="text-sm font-mono text-accent-lighter">2022</span>
+            <h4 class="text-2xl tracking-tight mb-2 font-display font-medium mt-1">Lifetime History Award</h4>
+            <p class="text-accent leading-relaxed text-sm max-w-sm">
+              Selecionado entre os 30 brasileiros premiados com o Lifetime History — a mais alta distinção internacional da odontologia, celebrando uma carreira inteira de contribuições transformadoras.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: empty -->
+      <div class="hidden md:block md:w-[46%] md:ml-auto"></div>
+    </div>
+
+    <!-- ── TIMELINE ITEM 4: RIGHT CARD ── -->
+    <div class="relative flex flex-col md:flex-row items-start md:items-center mb-20 md:mb-28 tl-item">
+      <!-- Timeline Dot -->
+      <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-900 border-4 border-surface-50 z-10 shadow-md"></div>
+      <div class="md:hidden absolute left-6 -translate-x-1/2 w-4 h-4 rounded-full bg-brand-900 border-4 border-surface-50 z-10 shadow-md"></div>
+
+      <!-- LEFT: empty -->
+      <div class="hidden md:block md:w-[46%]"></div>
+
+      <!-- RIGHT: Card -->
+      <div class="md:w-[46%] md:pl-12 md:ml-auto pl-12 md:pl-12 group">
+        <!-- Image card -->
+        <div class="relative overflow-hidden rounded-2xl mb-6 aspect-[4/3] bg-surface-100 cursor-pointer">
+          <img alt="Dr. Montenegro — CRMONTENEGRO Hoje" class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-110" style="object-position: center 25%;" src="media/Montenegro 2.jpg"/>
+          <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500"></div>
+        </div>
+        <!-- Text -->
+        <div class="flex justify-between items-start">
+          <div>
+            <span class="text-sm font-mono text-accent-lighter">2024</span>
+            <h4 class="text-2xl tracking-tight mb-2 font-display font-medium mt-1">CRMONTENEGRO Hoje</h4>
+            <p class="text-accent leading-relaxed text-sm max-w-sm">
+              Clínica referência no Nordeste com estrutura de ponta, scanner intraoral 3D, planejamento digital de sorriso e uma equipe multidisciplinar. Cada paciente recebe um protocolo exclusivo, desenhado para resultados que duram a vida inteira.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline End Dot -->
+    <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 bottom-0 w-3 h-3 rounded-full bg-accent-lighter z-10"></div>
+    <div class="md:hidden absolute left-6 -translate-x-1/2 bottom-0 w-3 h-3 rounded-full bg-accent-lighter z-10"></div>
+
+  </div><!-- /.timeline -->
+
+  <!-- CTA -->
+  <div class="text-center mt-8 tl-reveal">
+    <a href="https://wa.me/5500000000000" target="_blank" class="inline-flex items-center gap-2 bg-brand-900 text-surface-50 px-8 py-4 rounded-full text-lg font-medium hover:bg-brand-800 hover:scale-105 transition-all group">
+      Agende sua Avaliação
+      <iconify-icon class="group-hover:translate-x-0.5 transition-transform" icon="solar:arrow-right-linear" width="20"></iconify-icon>
+    </a>
+  </div>
+
+</section>
+
 </div><!-- /.relative z-10 -->
 
 <!-- ========== SCRIPTS ========== -->
@@ -380,6 +544,64 @@ document.addEventListener("DOMContentLoaded", () => {
         scrollTrigger: {
           trigger: el,
           start: "top 85%"
+        }
+      }
+    );
+  });
+
+  // ═══════════════════════════════════════════════════════
+  // TIMELINE SECTION ANIMATIONS
+  // ═══════════════════════════════════════════════════════
+
+  // 5A: Timeline H2 — Masked Text Reveal on scroll
+  const tlTextElements = document.querySelectorAll(".tl-reveal-text");
+  if (tlTextElements.length) {
+    gsap.fromTo(tlTextElements,
+      { y: "100%", skewY: 5 },
+      {
+        y: "0%",
+        skewY: 0,
+        duration: 1.2,
+        stagger: 0.12,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: "#trajetoria",
+          start: "top 75%"
+        }
+      }
+    );
+  }
+
+  // 5B: Timeline generic reveals (labels, paragraphs, CTA)
+  document.querySelectorAll(".tl-reveal").forEach((el) => {
+    gsap.fromTo(el,
+      { opacity: 0, y: 30 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.8,
+        ease: "power2.out",
+        scrollTrigger: {
+          trigger: el,
+          start: "top 85%"
+        }
+      }
+    );
+  });
+
+  // 5C: Timeline Items — alternating left/right slide-in
+  document.querySelectorAll(".tl-item").forEach((item, index) => {
+    const isLeft = index % 2 === 0;
+    gsap.fromTo(item,
+      { opacity: 0, x: isLeft ? -60 : 60 },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: item,
+          start: "top 80%"
         }
       }
     );
