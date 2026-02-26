@@ -1,0 +1,83 @@
+/* === DS BASE STYLES === */
+  body { font-family: 'Inter', sans-serif; }
+  .font-display { font-family: 'DM Sans', sans-serif; }
+  .font-accent { font-family: 'Bricolage Grotesque', sans-serif; }
+  html { scroll-behavior: smooth; }
+
+  /* === DS ANIMATION: Line Mask === */
+  .line-mask {
+    overflow: hidden;
+    display: inline-flex;
+  }
+
+  /* === DS ANIMATION: Marquee === */
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  .animate-marquee {
+    animation: marquee 30s linear infinite;
+  }
+
+  /* === DS GRID LINES (Fixed Background) === */
+  .grid-lines {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+    pointer-events: none;
+    z-index: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+  }
+  .grid-line {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(147, 154, 171, 0.12);
+  }
+
+  /* === DENTAL CANVAS BACKGROUND === */
+  #dental-canvas {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.5;
+  }
+
+  /* === SELECTION COLORS (DS pattern) === */
+  ::selection {
+    background-color: #393E46;
+    color: #F7F7F7;
+  }
+
+  /* === SUBTLE GLOW on hero image === */
+  .hero-image-glow {
+    box-shadow: 0 25px 60px -12px rgba(57, 62, 70, 0.15),
+                0 0 0 1px rgba(146, 154, 171, 0.08);
+  }
+
+  /* === AWARD BADGE SHIMMER === */
+  @keyframes shimmer {
+    0% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+  .award-shimmer {
+    background: linear-gradient(
+      90deg,
+      #929AAB 0%,
+      #B0B6C1 25%,
+      #D4D8DE 50%,
+      #B0B6C1 75%,
+      #929AAB 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: shimmer 4s linear infinite;
+  }

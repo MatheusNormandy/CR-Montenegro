@@ -16,8 +16,10 @@ crmontenegro/
 │   │   ├── timeline-invisalign.png
 │   │   ├── timeline-premiacao.png
 │   │   └── timeline-hoje.jpg
-│   ├── css/                # (reservado para futuro CSS externo)
-│   └── js/                 # (reservado para futuro JS externo)
+│   ├── css/
+│   │   └── style.css             # Estilos customizados e animações CSS
+│   └── js/
+│       └── main.js               # Lógica GSAP, Canvas e ScrollTrigger
 ├── robots.txt
 ├── .gitignore
 └── README.md
